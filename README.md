@@ -1,2 +1,0 @@
-# QuizComponent
-Created with CodeSandbox

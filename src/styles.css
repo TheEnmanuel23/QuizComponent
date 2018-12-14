@@ -1,0 +1,74 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.quiz {
+  padding: 20px;
+  border: 1px solid gray;
+  height: 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.quiz-action {
+  margin-top: 30px;
+  font-size: 15px;
+}
+.question-counter {
+  margin-right: 10px;
+  font-size: 17px;
+}
+.question-container {
+  flex-direction: column;
+  transition: all 300ms ease-out;
+}
+.quiz-title {
+  font-size: 20px;
+  margin: 0;
+  text-align: left;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #ece9e9;
+  padding-bottom: 20px;
+}
+.question label {
+  display: flex;
+}
+.options input {
+  display: flex;
+  margin-right: 10px;
+}
+.incorrect {
+  margin: 0;
+  background: #b13535;
+  color: white;
+  padding: 10px;
+}
+.question-option {
+  display: flex;
+  font-size: 17px;
+  align-items: center;
+}
+
+.question-option input {
+  margin-right: 10px;
+}
+
+/* transition effect */
+.question-container-entering {
+  opacity: 0;
+  transform: translate(300px);
+}
+.alert-message-enter {
+  opacity: 0.01;
+  transform: translateY(30px);
+  transition: all 100ms ease-out;
+}
+.alert-message-enter-active {
+  opacity: 1;
+  transform: translate(0px);
+}
+.alert-message-exit {
+  opacity: 0;
+}
